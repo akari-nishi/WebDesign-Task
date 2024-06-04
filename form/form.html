@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入力フォーム</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+    <h1>会員登録</h1>
+    <form action="#" method="post">
+    <fieldset>
+     <legend>お客様情報</legend>
+       <p>姓　　　　　　　: <input type="text" name="last_name"></p>
+       <p>名　　　　　　　: <input type="text" name="fist_name"></p>
+       <p>住所　　　　　　: <input type="text" name="address"></p>
+       <p>メールアドレス　: <input type="text" name="email"></p>
+       <p>電話番号　　　　: <input type="text" name="tel"></p>
+       <p>生年月日　　　　: <input type="date" name="birthday" value="1990-01-01"></p>
+       <p>年齢　　　　　　: <input type="number" name="age" min="0" max="150"> 歳</p>
+       <p>性別　　　　　　: 
+        <label><input type="radio" name="gender" value="0"> 男 </label>
+        <label><input type="radio" name="gender" value="1"> 女 </label>
+        <label><input type="radio" name="gender" value="2"> その他 </label></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>パスワード</legend>
+        <p></p><label>英数字８文字以上で入力してください。<br><input type="password" name="password"></label></p>
+        <p><label>確認のためもう一度入力してください。<br><input type="password" name="password_confirm"></label></p>
+    </fieldset>
+    <fieldset>
+    <legend>希望メールマガジン</legend>
+        <label><input type="radio" name="magazine"agree value="1"> IT</label>
+        <label><input type="radio" name="magazine" value="2"> 営業</label>
+        <label><input type="radio" name="magazine" value="3"> 接客</label>
+        <label><input type="radio" name="magazine" value="4"> 医療</label>
+    </fieldset>
+<fieldset>
+    <legend>利用規約</legend>
+    <p> <a href="/task/form/terms.html" target="_blank">利用規約を確認する</a></p>
+        <p><label><input type="radio" name="terms" value="agree"> 規約に同意する</label></p>
+    </fieldset>
+        <p><button type="reset">クリア</button>
+        <button type="submit">確認</button></p>
+    </form>
+
+</body>
+</html>
