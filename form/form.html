@@ -8,14 +8,15 @@
 </head>
 <body>
     <h1>会員登録</h1>
+   <p> 以下の情報を入力し、確認ボタンを押してください。</p>
     <form action="#" method="post">
     <fieldset>
      <legend>お客様情報</legend>
        <p>姓　　　　　　　: <input type="text" name="last_name"></p>
        <p>名　　　　　　　: <input type="text" name="fist_name"></p>
        <p>住所　　　　　　: <input type="text" name="address"></p>
-       <p>メールアドレス　: <input type="text" name="email"></p>
-       <p>電話番号　　　　: <input type="text" name="tel"></p>
+       <p>メールアドレス　: <input type="email" name="email"></p>
+       <p>電話番号　　　　: <input type="tel" name="tel"></p>
        <p>生年月日　　　　: <input type="date" name="birthday" value="1990-01-01"></p>
        <p>年齢　　　　　　: <input type="number" name="age" min="0" max="150"> 歳</p>
        <p>性別　　　　　　: 
@@ -38,8 +39,8 @@
     </fieldset>
 <fieldset>
     <legend>利用規約</legend>
-    <p> <a href="/task/form/terms.html" target="_blank">利用規約を確認する</a></p>
-        <p><label><input type="radio" name="terms" value="agree"> 規約に同意する</label></p>
+    <p> <a href="terms.html" target="_blank">利用規約を確認する</a></p>
+        <p><label><input type="terms" name="terms" value="agree"> 規約に同意する</label></p>
     </fieldset>
         <p><button type="reset">クリア</button>
         <button type="submit">確認</button></p>
